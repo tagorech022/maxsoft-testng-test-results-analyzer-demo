@@ -8,7 +8,7 @@
     <artifactId>maxsoft-testng-test-results-analyzer-demo</artifactId>
     <version>1.0.0</version>
 
-	<repositories>
+    <repositories>
         <repository>
             <id>jitpack.io</id>
             <url>https://jitpack.io</url>
