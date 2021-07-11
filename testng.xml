@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression Test Suite">
+<!--    <listeners>-->
+<!--        <listener class-name="com.maxsoft.testngtestresultsanalyzer.ReportListener"/>-->
+<!--    </listeners>-->
+    <test name="Regression Test">
+        <classes>
+            <class name="tests.PassingTest"/>
+            <class name="tests.FailingTest"/>
+            <class name="tests.SkippingTest"/>
+            <class name="tests.MixedTest"/>
+        </classes>
+    </test>
+</suite>
