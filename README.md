@@ -72,17 +72,17 @@ generation for test executions.
             <url>https://jitpack.io</url>
         </repository>
     </repositories>
-	
+
     <dependencies>
         <dependency>
             <groupId>com.github.osandadeshan</groupId>
             <artifactId>maxsoft-testng-test-results-analyzer</artifactId>
-            <version>1.0.0</version>
+            <version>1.0.1</version>
         </dependency>
     </dependencies>
 ```
 
-2. Create "**test-results-analyzer.properties**" in "***src/test/resources***".
+2. Create "**test-results-analyzer.properties**" in "***src/main/resources***".
 ```xml
 # Test Analyzer Report Configs
 extent_full_report_dir=./reports/html-reports
