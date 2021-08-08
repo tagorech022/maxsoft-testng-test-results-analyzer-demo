@@ -9,6 +9,7 @@
             <class name="tests.FailingTest"/>
             <class name="tests.SkippingTest"/>
             <class name="tests.MixedTest"/>
+            <class name="tests.ExceptionTest"/>
         </classes>
     </test>
 </suite>
