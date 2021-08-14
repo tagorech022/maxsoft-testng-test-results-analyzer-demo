@@ -12,8 +12,8 @@ import static org.testng.Assert.assertEquals;
  * Project Name    : maxsoft-test-results-analyzer-demo
  * Developer       : Osanda Deshan
  * Version         : 1.0.0
- * Date            : 7/11/2021
- * Time            : 12:27 PM
+ * Date            : 07/02/2021
+ * Time            : 3:38 PM
  * Description     : This is the mixed class to simulate test passing, failing and skipping
  **/
 
@@ -32,22 +32,14 @@ public class MixedTest extends BaseTest {
         assertEquals(homePage.getProfileName(), "Osanda Deshan Nimalarathna");
     }
 
-    @SuppressWarnings("TestFailedLine")
     @Category("Failing category in MixedTest class")
     @Test(description = "Failing test simulation")
-    public void testFailingMethod1() {
+    public void testFailingMethod() {
         assertEquals(homePage.getProfileName(), "Osanda Deshan");
     }
 
-    @SuppressWarnings("TestFailedLine2")
-    @Category("Failing category in MixedTest class")
-    @Test(description = "Failing test simulation")
-    public void testFailingMethod2() {
-        assertEquals(homePage.getInvalidLocator(), "");
-    }
-
     @Category("Skipping category in MixedTest class")
-    @Test(description = "Skipping test simulation", dependsOnMethods = "testFailingMethod1")
+    @Test(description = "Skipping test simulation", dependsOnMethods = "testFailingMethod")
     public void testSkippingMethod() {
         System.out.println("'testSkippingMethod' method will skip");
     }

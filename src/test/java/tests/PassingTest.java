@@ -12,8 +12,8 @@ import static org.testng.Assert.assertEquals;
  * Project Name    : maxsoft-test-results-analyzer-demo
  * Developer       : Osanda Deshan
  * Version         : 1.0.0
- * Date            : 7/11/2021
- * Time            : 12:28 PM
+ * Date            : 07/02/2021
+ * Time            : 3:38 PM
  * Description     : This is the passing class to simulate test passing
  **/
 
@@ -26,13 +26,13 @@ public class PassingTest extends BaseTest {
         homePage = new HomePage(getDriver());
     }
 
-    @Category("Passing category in PassingTest class")
+    @Category("Passing")
     @Test(description = "Passing test simulation 1")
     public void testPassingMethod1() {
         assertEquals(homePage.getProfileName(), "Osanda Deshan Nimalarathna");
     }
 
-    @Category("Passing category in PassingTest class")
+    @Category("Passing")
     @Test(description = "Passing test simulation 2")
     public void testPassingMethod2() {
         assertEquals(homePage.getUsername(), "osandadeshan");
