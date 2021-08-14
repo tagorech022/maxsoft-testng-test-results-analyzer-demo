@@ -72,12 +72,12 @@ generation for test executions.
             <url>https://jitpack.io</url>
         </repository>
     </repositories>
-
+	
     <dependencies>
         <dependency>
             <groupId>com.github.osandadeshan</groupId>
             <artifactId>maxsoft-testng-test-results-analyzer</artifactId>
-            <version>1.0.1</version>
+            <version>1.1.0</version>
         </dependency>
     </dependencies>
 ```
@@ -188,13 +188,13 @@ public class LoginTest {
 
 ```
 
-7. Create the "**testng.xml**" by adding the "**com.maxsoft.testngtestresultsanalyzer.ReportListener**" listener class.
+7. Create the "**testng.xml**" by adding the "**com.maxsoft.testngtestresultsanalyzer.TestAnalyzeReportListener**" listener class.
 
 ```xml
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Regression Test Suite">
     <listeners>
-        <listener class-name="com.maxsoft.testngtestresultsanalyzer.ReportListener"/>
+        <listener class-name="com.maxsoft.testngtestresultsanalyzer.TestAnalyzeReportListener"/>
     </listeners>
     <test name="Regression Test">
         <classes>
