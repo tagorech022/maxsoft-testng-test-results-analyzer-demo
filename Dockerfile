@@ -5,8 +5,7 @@ WORKDIR /app
 COPY pom.xml .
 COPY src ./src
 
-# Build without running tests
-RUN mvn clean install -DskipTests
+# Use skipTests and also skip test compilation entirely
+RUN mvn clean package -Dmaven.test.skip=true
 
-# Set default command to run tests when container starts
 CMD ["mvn", "test"]
